@@ -1,6 +1,6 @@
 # Example Python script
 data = {
-    "name": "Sample Data",
+    "name": "RaghavendarRavi",
     "value": 42
 }
 
