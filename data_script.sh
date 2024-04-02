@@ -1,14 +1,11 @@
 #!/bin/bash
 
-# Sample data
-data="This is some sample test email data"
+# Replace these placeholders with your details
+recipient_email="raghul13gee@gmail.com"
+subject="Jenkins Build Notification"
+body="Your Jenkins build has completed!"
 
-# Print the data
-echo "Here's the data:"
-echo "$data"
+# Send the email using the 'mail' command
+mail -s "$subject" "$recipient_email" <<< "$body"
 
-# Additional commands (optional)
-# You can add commands to process or manipulate the data here
-# For example, to get the current date and time:
-# echo "Current date and time:"
-# date
+echo "Email notification sent from Jenkins!"
